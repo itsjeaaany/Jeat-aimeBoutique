@@ -1,0 +1,6 @@
+services:
+  anneproject:
+    image: anneproject
+    build:
+      context: .
+      dockerfile: ./Dockerfile

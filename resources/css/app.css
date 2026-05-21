@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+    .shopee-card {
+        background-color: #FFB7AC !important;
+        @apply rounded-3xl shadow-sm transition duration-200 ease-in-out hover:-translate-y-1;
+    }
+
+    .shopee-badge {
+        @apply inline-flex items-center rounded-full bg-[#ffe7dd] text-[#c86a59] text-xs font-semibold uppercase tracking-wide px-3 py-1;
+    }
+
+    .shopee-btn {
+        @apply inline-flex items-center justify-center rounded-full bg-[#f7b7a1] text-white px-5 py-3 font-semibold shadow-md transition;
+        box-shadow: 0 10px 30px rgba(247, 183, 161, 0.25);
+    }
+
+    .shopee-btn:hover {
+        background-color: #e9896d;
+    }
+
+    .product-image-frame {
+        @apply rounded-[2rem] bg-white p-4 flex items-center justify-center overflow-hidden;
+    }
+
+    .product-thumbnail-frame {
+        @apply rounded-xl bg-white p-1 flex items-center justify-center overflow-hidden;
+    }
+
+    .shopee-input {
+        @apply rounded-full border bg-white px-4 py-2 shadow-sm focus:ring-2;
+        border-color: #ffd6c8;
+    }
+
+    .shopee-input:focus {
+        border-color: #f7b7a1;
+        box-shadow: 0 0 0 4px rgba(247, 183, 161, 0.15);
+    }
+}
+
+@tailwind utilities;
